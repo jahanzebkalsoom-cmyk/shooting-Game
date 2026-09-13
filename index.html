@@ -1,0 +1,95 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Shadow Arena 3D</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Main Game Container -->
+    <div id="game-container"></div>
+
+    <!-- Start Screen -->
+    <div id="start-screen" class="screen">
+
+        <div class="game-card">
+
+            <p class="small-title">3D TRAINING ARENA</p>
+
+            <h1>SHADOW ARENA</h1>
+
+            <p class="description">
+                Enter the arena and complete your training missions.
+            </p>
+
+            <button id="start-btn">
+                START GAME
+            </button>
+
+           <button
+    id="instructions-btn"
+    class="secondary-btn"
+    onclick="alert(
+        'Controls:\\n\\nW A S D = Move\\nShift = Sprint\\nSpace = Jump\\nMouse Click = Shoot\\nR = Reload'
+    )"
+>
+    INSTRUCTIONS
+</button>
+
+        </div>
+
+    </div>
+
+    <!-- Game HUD -->
+    <div id="hud" class="hidden">
+
+        <div class="hud-top">
+
+            <div class="hud-box">
+                <span>HEALTH</span>
+                <strong id="health">100</strong>
+            </div>
+
+            <div class="hud-box">
+                <span>AMMO</span>
+                <strong id="ammo">30 / 120</strong>
+            </div>
+
+            <div class="hud-box">
+                <span>SCORE</span>
+                <strong id="score">0</strong>
+            </div>
+
+        </div>
+
+        <div id="crosshair">
+            +
+        </div>
+
+        <div id="mission-info">
+            Mission 1: Practice Targets
+        </div>
+
+    </div>
+
+    <!-- Three.js -->
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js">
+    </script>
+
+    <!-- Main JavaScript -->
+    <script type="module" src="./js/main.js"></script>
+
+</body>
+</html>
+```
