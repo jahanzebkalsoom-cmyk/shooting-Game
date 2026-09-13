@@ -1,6 +1,5 @@
-import { Game } from "./game.js";
 
-
+import { Game } from "./game.js"; 
 const gameContainer =
     document.getElementById(
         "game-container"
